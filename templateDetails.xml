@@ -14,7 +14,4 @@
 	<description>TPL_BOOTSTRAP_TEMPLATE_DESCRIPTION</description>
 	-->
 	<!--end optional fields -->
-	<files>
-		<folder>css</folder>
-	</files>
 </extension>
