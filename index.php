@@ -41,7 +41,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
 			<a class="brand" href="<?php echo $this->baseurl; ?>"><?php echo htmlspecialchars($this->params->get('sitedescription')) ?></a>
 			<?php if ($this->countModules('position-1')) : ?>
 			<div class="nav-collapse collapse">
-				<jdoc:include type="modules" name="position-1" style="none" />
+				<jdoc:include type="modules" name="position-1" />
 			</div>
 			<?php endif; ?>
 		</div>
