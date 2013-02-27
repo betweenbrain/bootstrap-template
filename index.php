@@ -17,8 +17,6 @@ JHtml::_('bootstrap.framework');
 // Load core Bootstrap CSS and Bootstrap bugfixes from /media/jui/css/ (bootstrap.min.css, bootstrap-responsive.min.css, bootstrap-extended.css)
 // https://github.com/joomla/joomla-cms/blob/master/libraries/cms/html/bootstrap.php#L611
 JHtmlBootstrap::loadCss(TRUE, $this->direction);
-// Returns a reference to the application object
-$app = JFactory::getApplication();
 // Returns a reference to the global document object
 $doc = JFactory::getDocument();
 // Load optional template CSS
@@ -40,7 +38,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="brand" href="<?php echo $this->baseurl; ?>"><?php echo htmlspecialchars($app->getCfg('sitename')) ?></a>
+			<a class="brand" href="<?php echo $this->baseurl; ?>"><?php echo htmlspecialchars($this->params->get('sitedescription')) ?></a>
 			<?php if ($this->countModules('position-1')) : ?>
 			<div class="nav-collapse collapse">
 				<jdoc:include type="modules" name="position-1" />
