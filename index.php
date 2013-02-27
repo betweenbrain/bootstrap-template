@@ -22,14 +22,14 @@ $app = JFactory::getApplication();
 // Returns a reference to the global document object
 $doc = JFactory::getDocument();
 // Load optional template CSS
-$doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
+$doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
 ?>
 <!DOCTYPE html>
 <head>
-<jdoc:include type="head" />
+	<jdoc:include type="head" />
 </head>
 <!--[if lt IE 9]>
-	<script src="<?php echo $this->baseurl ?>/media/jui/js/html5.js"></script>
+<script src="<?php echo $this->baseurl ?>/media/jui/js/html5.js"></script>
 <![endif]-->
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top">
