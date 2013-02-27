@@ -28,8 +28,17 @@ body {
 	float : right;
 }
 
-.navbar .nav>li{
-	margin: .25em 1em 0 0;
+.navbar-inverse .brand{
+	color:#DD4814;
+	font-weight: bold;
+	font-size: 3em;
+	position: relative;
+	top:.075em;
+	text-shadow: 2px 3px 4px #2C001E;
+}
+
+.navbar .nav>li {
+	margin : .25em 1em 0 0;
 }
 
 .navbar .nav>li>a {
