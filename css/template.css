@@ -19,8 +19,35 @@ body {
 }
 
 .navbar-inverse .navbar-inner {
-	background-color : #DD4814;
+	background-color : transparent;
 	background-image : none;
+}
+
+.navbar .nav,
+.navbar-inverse .brand {
+	float : right;
+}
+
+.navbar-inverse .brand{
+	color:#DD4814;
+	font-weight: bold;
+	font-size: 3em;
+	position: relative;
+	top:.075em;
+	text-shadow: 2px 3px 4px #2C001E;
+}
+
+.navbar .nav>li {
+	margin : .25em 1em 0 0;
+}
+
+.navbar .nav>li>a {
+	background-color : #32cd32;
+	color            : #fff;
+}
+
+.navbar .nav>li>a:hover {
+	background-color : #8b4513;
 }
 
 .navbar-inverse .nav .active>a,
@@ -29,6 +56,11 @@ body {
 	background-color : #77216F;
 }
 
+.navbar-fixed-top .navbar-inner {
+	webkit-box-shadow : none;
+	-moz-box-shadow   : none;
+	box-shadow        : none;
+}
 
 @media (max-width: 979px) {
 	body {
