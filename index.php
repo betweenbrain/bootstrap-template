@@ -11,10 +11,10 @@
  * License    GNU GPL v3 or later
  */
 
-// Add Twitter Bootstrap Javascript Framework
+// Optional: load Twitter Bootstrap Javascript Framework
 // http://docs.joomla.org/Javascript_Frameworks#Twitter_Bootstrap_Javascript_Framework
 JHtml::_('bootstrap.framework');
-// Load core Bootstrap CSS and Bootstrap bugfixes from /media/jui/css/ (bootstrap.min.css, bootstrap-responsive.min.css, bootstrap-extended.css)
+// Load core Bootstrap CSS and Bootstrap bug fixes from /media/jui/css/ (bootstrap.min.css, bootstrap-responsive.min.css, bootstrap-extended.css)
 // https://github.com/joomla/joomla-cms/blob/master/libraries/cms/html/bootstrap.php#L611
 JHtmlBootstrap::loadCss(TRUE, $this->direction);
 // Returns a reference to the application object
