@@ -27,10 +27,10 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
 <!DOCTYPE html>
 <head>
 <jdoc:include type="head" />
-</head>
 <!--[if lt IE 9]>
 <script src="<?php echo $this->baseurl ?>/media/jui/js/html5.js"></script>
 <![endif]-->
+</head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
