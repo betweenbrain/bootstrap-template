@@ -11,7 +11,7 @@
  * License    GNU GPL v3 or later
  */
 
-// Optional: load Twitter Bootstrap Javascript Framework
+// Optional: Load Twitter Bootstrap Javascript Framework
 // http://docs.joomla.org/Javascript_Frameworks#Twitter_Bootstrap_Javascript_Framework
 JHtml::_('bootstrap.framework');
 // Load core Bootstrap CSS and Bootstrap bug fixes from /media/jui/css/ (bootstrap.min.css, bootstrap-responsive.min.css, bootstrap-extended.css)
@@ -39,9 +39,9 @@ $app = JFactory::getApplication();
 			</button>
 			<a class="brand" href="<?php echo $this->baseurl; ?>"><?php echo htmlspecialchars($app->getCfg('sitename')) ?></a>
 			<?php if ($this->countModules('position-1')) : ?>
-				<div class="nav-collapse collapse">
-					<jdoc:include type="modules" name="position-1" />
-				</div>
+			<div class="nav-collapse collapse">
+				<jdoc:include type="modules" name="position-1" />
+			</div>
 			<?php endif; ?>
 		</div>
 	</div>
@@ -60,6 +60,5 @@ $app = JFactory::getApplication();
 		</div>
 	</div>
 </div>
-
 </body>
 </html>
