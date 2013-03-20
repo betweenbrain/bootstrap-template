@@ -32,6 +32,7 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
 <![endif]-->
 </head>
 <body>
+<!-- Responsive Navbar http://twitter.github.com/bootstrap/components.html#navbar -->
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
