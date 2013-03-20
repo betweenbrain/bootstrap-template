@@ -48,17 +48,8 @@ $app = JFactory::getApplication();
 </div>
 
 <div class="container">
-	<!-- http://twitter.github.com/bootstrap/scaffolding.html#fluidGridSystem -->
-	<div class="row-fluid">
-		<div class="span9">
-			<jdoc:include type="modules" name="position-3" />
-			<jdoc:include type="message" />
-			<jdoc:include type="component" />
-		</div>
-		<div class="span3">
-			<jdoc:include type="modules" name="position-7" style="xhtml" />
-		</div>
-	</div>
+	<jdoc:include type="message" />
+	<jdoc:include type="component" />
 </div>
 </body>
 </html>
