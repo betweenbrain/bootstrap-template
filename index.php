@@ -19,19 +19,16 @@ JHtml::_('bootstrap.framework');
 JHtmlBootstrap::loadCss(TRUE, $this->direction);
 // Returns a reference to the application object
 $app = JFactory::getApplication();
-// Returns a reference to the global document object
-$doc = JFactory::getDocument();
-// Load optional template CSS
-$doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
 ?>
 <!DOCTYPE html>
 <head>
 <jdoc:include type="head" />
-	<!--[if lt IE 9]>
-		<script src="<?php echo $this->baseurl ?>/media/jui/js/html5.js"></script>
-	<![endif]-->
+<!--[if lt IE 9]>
+<script src="<?php echo $this->baseurl ?>/media/jui/js/html5.js"></script>
+<![endif]-->
 </head>
 <body>
+<!-- Responsive Navbar http://twitter.github.com/bootstrap/components.html#navbar -->
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
@@ -42,22 +39,25 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
 			</button>
 			<a class="brand" href="<?php echo $this->baseurl; ?>"><?php echo htmlspecialchars($app->getCfg('sitename')) ?></a>
 			<?php if ($this->countModules('position-1')) : ?>
-			<div class="nav-collapse collapse">
-				<jdoc:include type="modules" name="position-1" />
-			</div>
+				<div class="nav-collapse collapse">
+					<jdoc:include type="modules" name="position-1" />
+				</div>
 			<?php endif; ?>
 		</div>
 	</div>
 </div>
 
 <div class="container">
-	<div class="span8">
-		<jdoc:include type="modules" name="position-3" />
-		<jdoc:include type="message" />
-		<jdoc:include type="component" />
-	</div>
-	<div class="span3">
-		<jdoc:include type="modules" name="position-7" style="xhtml" />
+	<!-- http://twitter.github.com/bootstrap/scaffolding.html#fluidGridSystem -->
+	<div class="row-fluid">
+		<div class="span9">
+			<jdoc:include type="modules" name="position-3" />
+			<jdoc:include type="message" />
+			<jdoc:include type="component" />
+		</div>
+		<div class="span3">
+			<jdoc:include type="modules" name="position-7" style="xhtml" />
+		</div>
 	</div>
 </div>
 
