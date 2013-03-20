@@ -24,10 +24,11 @@ $app = JFactory::getApplication();
 <head>
 <jdoc:include type="head" />
 <!--[if lt IE 9]>
-	<script src="<?php echo $this->baseurl ?>/media/jui/js/html5.js"></script>
+<script src="<?php echo $this->baseurl ?>/media/jui/js/html5.js"></script>
 <![endif]-->
 </head>
 <body>
+<!-- Responsive Navbar http://twitter.github.com/bootstrap/components.html#navbar -->
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
