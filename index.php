@@ -14,10 +14,14 @@
 // Optional: Load Twitter Bootstrap Javascript Framework
 // http://docs.joomla.org/Javascript_Frameworks#Twitter_Bootstrap_Javascript_Framework
 JHtml::_('bootstrap.framework');
-// Load core Bootstrap CSS and Bootstrap bugfixes using class loader method. See http://docs.joomla.org/JHtml::_/11.1
-JHtml::_('bootstrap.loadCss');
+
+// Load core Bootstrap CSS and Bootstrap bug fixes from /media/jui/css/ (bootstrap.min.css, bootstrap-responsive.min.css, bootstrap-extended.css)
+// https://github.com/joomla/joomla-cms/blob/master/libraries/cms/html/bootstrap.php#L611
+JHtmlBootstrap::loadCss(TRUE, $this->direction);
+
 // Returns a reference to the application object
 $app = JFactory::getApplication();
+
 ?>
 <!DOCTYPE html>
 <head>
